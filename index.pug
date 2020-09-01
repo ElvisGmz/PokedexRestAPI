@@ -1,0 +1,17 @@
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Pokedex
+        link(rel="stylesheet", href="./style.css")
+    body
+      header.navBar POKEDEX | ElvisGmz_
+      div.container
+        div.imgDiv
+            img#pokedex(src="./pokedex.png")
+            img#PokemonImg
+        label#numberPokemon 0
+        label#namePokemon NaN
+        button#upPokemon(onclick="nextPokemon()")
+        button#downPokemon(onclick="previousPokemon()")
+    script(src="./index.js")
